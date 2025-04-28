@@ -132,7 +132,6 @@ class Lab {
 
     //Method untuk menghitung jumlah perangkat yang tersedia 
     //Menggunakan instanceof untuk mengecek jenis perangkat
-    //Menggunakan equalsIgnoreCase agar tidak case-sensitive
     int hitungTersedia(String jenis) {
         int jumlah = 0;
         for (Perangkat p : perangkatList) {
@@ -147,7 +146,6 @@ class Lab {
     }
 
     //Method untuk menghitung jumlah pemakaian perangkat berdasarkan id
-    //Menggunakan equalsIgnoreCase agar tidak case-sensitive
     int hitungPenggunaan(String idPerangkat) {
         int jumlah = 0;
         for (Pemakai p : pemakaiList) {
